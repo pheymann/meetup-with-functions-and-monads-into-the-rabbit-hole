@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 4.1.465 <https://api.sketch.io/> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJ0aXRsZSI6IkRyYXdpbmciLCJkZXNjcmlwdGlvbiI6Im1hZGUgd2l0aCBTa2V0Y2hwYWQgLSBodHRwczovL3NrZXRjaC5pby9za2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImNsaXAiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsInNoYWRvd0NvbG9yIjoicmdiYSgyNTUsMjU1LDI1NSwwLjE1KSIsInNoYWRvd0JsdXIiOjEsImxpbmVXaWR0aCI6Mn19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjcxOSwiaGVpZ2h0Ijo2MTAsInNjYWxlIjoxLCJwYWdlcyI6eyJsZW5ndGgiOjEsImRhdGEiOlt7IndpZHRoIjo3MTksImhlaWdodCI6NjEwfV19fQ==" sketchjs:version="4.1.465">
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.838961038961039,0,0,0.7346126510305618,25,9)">
+	<path id="22b1fb8f_x2d7125_x2d463c_x2dbdcd_x2d15c4bc6b07ea" style="vector-effect: non-scaling-stroke;" d="M100.5 0 C156 0 201 45 201 100.5 201 156 156 201 100.5 201 45 201 0 156 0 100.5 0 45 45 0 100.5 0 z"/>
+	<use xlink:href="#22b1fb8f_x2d7125_x2d463c_x2dbdcd_x2d15c4bc6b07ea" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 8.38;"/>
+	<use xlink:href="#22b1fb8f_x2d7125_x2d463c_x2dbdcd_x2d15c4bc6b07ea"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.5931858234970779,-0.46344755774581753,0.46344755774581753,0.5931858234970779,39.2623376623377,89.54025974025976)">
+	<polyline id="b84b53b8_x2d761e_x2d420e_x2d85eb_x2d74ae01447c40" style="vector-effect: non-scaling-stroke;" points="0,0 26,19"/>
+	<use xlink:href="#b84b53b8_x2d761e_x2d420e_x2d85eb_x2d74ae01447c40" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.62;"/>
+	<use xlink:href="#b84b53b8_x2d761e_x2d420e_x2d85eb_x2d74ae01447c40"/>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.838961038961039,0,0,0.6535064935064938,69.46493506493505,70.24415584415587)">
+	<path id="c883fc8f_x2df5af_x2d4a90_x2db53a_x2d201b57786a33" style="vector-effect: non-scaling-stroke;" d="M47.5 0 C73.73 0 95 21.27 95 47.5 95 73.73 73.73 95 47.5 95 21.27 95 0 73.73 0 47.5 0 21.27 21.27 0 47.5 0 z"/>
+	<use xlink:href="#c883fc8f_x2df5af_x2d4a90_x2db53a_x2d201b57786a33" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.86;"/>
+	<use xlink:href="#c883fc8f_x2df5af_x2d4a90_x2db53a_x2d201b57786a33"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.6011837535631454,-0.45302445235350824,0.45302445235350824,0.6011837535631454,155.03896103896108,85.34545454545454)">
+	<polyline id="351d72bd_x2d8e6b_x2d46c8_x2da1da_x2d0b719cac9e9e" style="vector-effect: non-scaling-stroke;" points="0,0 26,19"/>
+	<use xlink:href="#351d72bd_x2d8e6b_x2d46c8_x2da1da_x2d0b719cac9e9e" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.62;"/>
+	<use xlink:href="#351d72bd_x2d8e6b_x2d46c8_x2da1da_x2d0b719cac9e9e"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.7884055121335758,0,0,0.7884055121335758,108.15555555555568,156.19908568057815)">
+	<polyline id="1741ddfc_x2dd0ed_x2d4220_x2d8ac1_x2d17968841f80a" style="vector-effect: non-scaling-stroke;" points="0,0 1,182"/>
+	<use xlink:href="#1741ddfc_x2dd0ed_x2d4220_x2d8ac1_x2d17968841f80a" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.12;"/>
+	<use xlink:href="#1741ddfc_x2dd0ed_x2d4220_x2d8ac1_x2d17968841f80a"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1.168918918918919,0,0,1.2220837724684208,70,295.66168752427876)">
+	<polyline id="2cf2b5db_x2d307b_x2d4e21_x2dad16_x2dfa7eb9bdd1f6" style="vector-effect: non-scaling-stroke;" points="0,145 33,0 74,146"/>
+	<use xlink:href="#2cf2b5db_x2d307b_x2d4e21_x2dad16_x2dfa7eb9bdd1f6" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.12;"/>
+	<use xlink:href="#2cf2b5db_x2d307b_x2d4e21_x2dad16_x2dfa7eb9bdd1f6"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1.0845665961945032,0,0,1.0845665961945032,87,174)">
+	<polyline id="4e5a86cd_x2d36b3_x2d47ab_x2d9bc7_x2d0c0fd8480c9a" style="vector-effect: non-scaling-stroke;" points="0,11 47,0"/>
+	<use xlink:href="#4e5a86cd_x2d36b3_x2d47ab_x2d9bc7_x2d0c0fd8480c9a" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.12;"/>
+	<use xlink:href="#4e5a86cd_x2d36b3_x2d47ab_x2d9bc7_x2d0c0fd8480c9a"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1.079207920792079,0,0,1.079207920792079,143,178.029702970297)">
+	<polyline id="fa314081_x2d39ec_x2d4e2c_x2dafba_x2d71d612015a77" style="vector-effect: non-scaling-stroke;" points="0,135 40,0 115,36 75,174 0,135 0,135"/>
+	<use xlink:href="#fa314081_x2d39ec_x2d4e2c_x2dafba_x2d71d612015a77" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.12;"/>
+	<use xlink:href="#fa314081_x2d39ec_x2d4e2c_x2dafba_x2d71d612015a77"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1.079207920792079,0,0,1.079207920792079,233.65346534653463,164)">
+	<polyline id="752c5af9_x2dac46_x2d4142_x2db611_x2d13312372fe34" style="vector-effect: non-scaling-stroke;" points="32,50 5,0 0,33"/>
+	<use xlink:href="#752c5af9_x2dac46_x2d4142_x2db611_x2d13312372fe34" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.12;"/>
+	<use xlink:href="#752c5af9_x2dac46_x2d4142_x2db611_x2d13312372fe34"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,136,175)">
+	<polyline id="e58b1801_x2d5df1_x2d4fea_x2dbf08_x2de2e6f88badbc" style="vector-effect: non-scaling-stroke;" points="0,0 16,50 33,57"/>
+	<use xlink:href="#e58b1801_x2d5df1_x2d4fea_x2dbf08_x2de2e6f88badbc" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.12;"/>
+	<use xlink:href="#e58b1801_x2d5df1_x2d4fea_x2dbf08_x2de2e6f88badbc"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,73,185)">
+	<polyline id="af6367bb_x2d2b63_x2d4eaa_x2d8f30_x2d5b5604519f6a" style="vector-effect: non-scaling-stroke;" points="16,0 0,55 85,84"/>
+	<use xlink:href="#af6367bb_x2d2b63_x2d4eaa_x2d8f30_x2d5b5604519f6a" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 7.12;"/>
+	<use xlink:href="#af6367bb_x2d2b63_x2d4eaa_x2d8f30_x2d5b5604519f6a"/>
+</g>
+<g sketchjs:tool="rectangle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,0.6019417475728155,8,477)">
+	<path id="496fb262_x2d2c38_x2d40a8_x2d84a5_x2d38f3ae9797a4" style="vector-effect: non-scaling-stroke;" d="M0 0 L206 0 206 206 0 206 z"/>
+	<use xlink:href="#496fb262_x2d2c38_x2d40a8_x2d84a5_x2d38f3ae9797a4" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 10.41;"/>
+	<use xlink:href="#496fb262_x2d2c38_x2d40a8_x2d84a5_x2d38f3ae9797a4"/>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.5584591959569225,0.362667642345402,-0.3175597266307998,0.4889990969573054,444,244)">
+	<path id="c2fa4924_x2dab93_x2d45bf_x2d9173_x2d0bc5d4b2229a" style="vector-effect: non-scaling-stroke;" d="M100.5 0 C156 0 201 45 201 100.5 201 156 156 201 100.5 201 45 201 0 156 0 100.5 0 45 45 0 100.5 0 z"/>
+	<use xlink:href="#c2fa4924_x2dab93_x2d45bf_x2d9173_x2d0bc5d4b2229a" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 8.38;"/>
+	<use xlink:href="#c2fa4924_x2dab93_x2d45bf_x2d9173_x2d0bc5d4b2229a"/>
+</g>
+<g sketchjs:tool="pie" style="fill: none; mix-blend-mode: source-over;" transform="matrix(-0.4000560590820414,0.6160323089421723,-0.6160323089421723,-0.4000560590820414,514.5748836452475,322.3849763130803)">
+	<path id="05f2204b_x2daea7_x2d461b_x2db58a_x2d01bf865e9748" style="vector-effect: non-scaling-stroke;" d="M47 47 L47 0 C72.96 0 94 21.04 94 47 94 72.96 72.96 94 47 94 z"/>
+	<use xlink:href="#05f2204b_x2daea7_x2d461b_x2db58a_x2d01bf865e9748" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.86;"/>
+	<use xlink:href="#05f2204b_x2daea7_x2d461b_x2db58a_x2d01bf865e9748"/>
+</g>
+<g sketchjs:tool="circle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.5741303455734708,-0.3373111896230421,0.3373111896230421,0.5741303455734708,414.60162220567656,302.71834526957775)">
+	<path id="947e6b40_x2df6cf_x2d43ba_x2db267_x2db8f2cd504982" style="vector-effect: non-scaling-stroke;" d="M11.18 0 C17.36 0 22.36 5.01 22.36 11.18 22.36 17.36 17.36 22.36 11.18 22.36 5.01 22.36 0 17.36 0 11.18 0 5.01 5.01 0 11.18 0 z"/>
+	<use xlink:href="#947e6b40_x2df6cf_x2d43ba_x2db267_x2db8f2cd504982"/>
+	<use xlink:href="#947e6b40_x2df6cf_x2d43ba_x2db267_x2db8f2cd504982" style="fill: black; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="circle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.5741303455734708,-0.3373111896230421,0.3373111896230421,0.5741303455734708,499.6542960798628,356.36424087181956)">
+	<path id="f9bc6601_x2dd5bb_x2d4773_x2dab8c_x2d4eaccf5645b1" style="vector-effect: non-scaling-stroke;" d="M11.18 0 C17.36 0 22.36 5.01 22.36 11.18 22.36 17.36 17.36 22.36 11.18 22.36 5.01 22.36 0 17.36 0 11.18 0 5.01 5.01 0 11.18 0 z"/>
+	<use xlink:href="#f9bc6601_x2dd5bb_x2d4773_x2dab8c_x2d4eaccf5645b1"/>
+	<use xlink:href="#f9bc6601_x2dd5bb_x2d4773_x2dab8c_x2d4eaccf5645b1" style="fill: black; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,470,392)">
+	<polyline id="484622da_x2de43a_x2d47de_x2d98fb_x2dab793788f591" style="vector-effect: non-scaling-stroke;" points="0,0 4,187 83,186"/>
+	<use xlink:href="#484622da_x2de43a_x2d47de_x2d98fb_x2dab793788f591" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#484622da_x2de43a_x2d47de_x2d98fb_x2dab793788f591"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,408,497)">
+	<polyline id="5fece048_x2d72eb_x2d474a_x2d97f9_x2db38a6c98dd6f" style="vector-effect: non-scaling-stroke;" points="64,0 0,1 1,90"/>
+	<use xlink:href="#5fece048_x2d72eb_x2d474a_x2d97f9_x2db38a6c98dd6f" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#5fece048_x2d72eb_x2d474a_x2d97f9_x2db38a6c98dd6f"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,463,416)">
+	<polyline id="19915217_x2d2c27_x2d45bb_x2da761_x2d86963a972ff2" style="vector-effect: non-scaling-stroke;" points="0,0 16,20"/>
+	<use xlink:href="#19915217_x2d2c27_x2d45bb_x2da761_x2d86963a972ff2" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#19915217_x2d2c27_x2d45bb_x2da761_x2d86963a972ff2"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,386,415)">
+	<polyline id="04a222d8_x2ddf2b_x2d4c5a_x2db3ea_x2d629a46213936" style="vector-effect: non-scaling-stroke;" points="92,19 48,59 0,0"/>
+	<use xlink:href="#04a222d8_x2ddf2b_x2d4c5a_x2db3ea_x2d629a46213936" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#04a222d8_x2ddf2b_x2d4c5a_x2db3ea_x2d629a46213936"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,389,418)">
+	<polyline id="61a6c152_x2df497_x2d477f_x2d967d_x2d3c9c33fd8151" style="vector-effect: non-scaling-stroke;" points="75,0 45,26 0,1"/>
+	<use xlink:href="#61a6c152_x2df497_x2d477f_x2d967d_x2d3c9c33fd8151" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#61a6c152_x2df497_x2d477f_x2d967d_x2d3c9c33fd8151"/>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.5584591959569225,0.362667642345402,-0.3175597266307998,0.4889990969573054,600.8295050527908,241)">
+	<path id="835ad9d3_x2d1977_x2d44de_x2db40e_x2d1aaf205b8ece" style="vector-effect: non-scaling-stroke;" d="M100.5 0 C156 0 201 45 201 100.5 201 156 156 201 100.5 201 45 201 0 156 0 100.5 0 45 45 0 100.5 0 z"/>
+	<use xlink:href="#835ad9d3_x2d1977_x2d44de_x2db40e_x2d1aaf205b8ece" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 8.38;"/>
+	<use xlink:href="#835ad9d3_x2d1977_x2d44de_x2db40e_x2d1aaf205b8ece"/>
+</g>
+<g sketchjs:tool="pie" style="fill: none; mix-blend-mode: source-over;" transform="matrix(-0.4000560590820414,0.6160323089421723,-0.6160323089421723,-0.4000560590820414,671.4043886980382,319.3849763130803)">
+	<path id="17e7b2eb_x2d645f_x2d4c44_x2daf83_x2d9de5613d4b14" style="vector-effect: non-scaling-stroke;" d="M47 47 L47 0 C72.96 0 94 21.04 94 47 94 72.96 72.96 94 47 94 z"/>
+	<use xlink:href="#17e7b2eb_x2d645f_x2d4c44_x2daf83_x2d9de5613d4b14" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.86;"/>
+	<use xlink:href="#17e7b2eb_x2d645f_x2d4c44_x2daf83_x2d9de5613d4b14"/>
+</g>
+<g sketchjs:tool="circle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.5741303455734708,-0.3373111896230421,0.3373111896230421,0.5741303455734708,571.4311272584673,299.71834526957775)">
+	<path id="1f5819f8_x2df8c7_x2d4534_x2db2a6_x2dc6a5f8d1ccfe" style="vector-effect: non-scaling-stroke;" d="M11.18 0 C17.36 0 22.36 5.01 22.36 11.18 22.36 17.36 17.36 22.36 11.18 22.36 5.01 22.36 0 17.36 0 11.18 0 5.01 5.01 0 11.18 0 z"/>
+	<use xlink:href="#1f5819f8_x2df8c7_x2d4534_x2db2a6_x2dc6a5f8d1ccfe"/>
+	<use xlink:href="#1f5819f8_x2df8c7_x2d4534_x2db2a6_x2dc6a5f8d1ccfe" style="fill: black; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="circle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.5741303455734708,-0.3373111896230421,0.3373111896230421,0.5741303455734708,656.4838011326535,353.36424087181956)">
+	<path id="91e19beb_x2d4569_x2d49f2_x2d865b_x2d63d1fcfd8f8e" style="vector-effect: non-scaling-stroke;" d="M11.18 0 C17.36 0 22.36 5.01 22.36 11.18 22.36 17.36 17.36 22.36 11.18 22.36 5.01 22.36 0 17.36 0 11.18 0 5.01 5.01 0 11.18 0 z"/>
+	<use xlink:href="#91e19beb_x2d4569_x2d49f2_x2d865b_x2d63d1fcfd8f8e"/>
+	<use xlink:href="#91e19beb_x2d4569_x2d49f2_x2d865b_x2d63d1fcfd8f8e" style="fill: black; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,626.8295050527908,389)">
+	<polyline id="07ce8231_x2def2e_x2d418d_x2db003_x2ddbdfa1fc6e58" style="vector-effect: non-scaling-stroke;" points="0,0 4,187 83,186"/>
+	<use xlink:href="#07ce8231_x2def2e_x2d418d_x2db003_x2ddbdfa1fc6e58" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#07ce8231_x2def2e_x2d418d_x2db003_x2ddbdfa1fc6e58"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,564.8295050527908,494)">
+	<polyline id="61c5e0cf_x2d5e3b_x2d423a_x2dbdb8_x2df4bd797465b8" style="vector-effect: non-scaling-stroke;" points="64,0 0,1 1,90"/>
+	<use xlink:href="#61c5e0cf_x2d5e3b_x2d423a_x2dbdb8_x2df4bd797465b8" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#61c5e0cf_x2d5e3b_x2d423a_x2dbdb8_x2df4bd797465b8"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,619.8295050527908,413)">
+	<polyline id="999e0fb0_x2d0571_x2d4879_x2d93f2_x2da6bbbc8b8c79" style="vector-effect: non-scaling-stroke;" points="0,0 16,20"/>
+	<use xlink:href="#999e0fb0_x2d0571_x2d4879_x2d93f2_x2da6bbbc8b8c79" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#999e0fb0_x2d0571_x2d4879_x2d93f2_x2da6bbbc8b8c79"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,542.8295050527908,412)">
+	<polyline id="e1c9ce02_x2d8d54_x2d45d2_x2da11c_x2de3165af04574" style="vector-effect: non-scaling-stroke;" points="92,19 48,59 0,0"/>
+	<use xlink:href="#e1c9ce02_x2d8d54_x2d45d2_x2da11c_x2de3165af04574" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#e1c9ce02_x2d8d54_x2d45d2_x2da11c_x2de3165af04574"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,545.8295050527908,415)">
+	<polyline id="51b2b318_x2da4f9_x2d4f99_x2dba31_x2dc74498e81d5c" style="vector-effect: non-scaling-stroke;" points="75,0 45,26 0,1"/>
+	<use xlink:href="#51b2b318_x2da4f9_x2d4f99_x2dba31_x2dc74498e81d5c" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.61;"/>
+	<use xlink:href="#51b2b318_x2da4f9_x2d4f99_x2dba31_x2dc74498e81d5c"/>
+</g>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(0.4170954904949203,0.17704653166968626,-0.17704653166968626,0.4170954904949203,185.2039544169647,217.44870080791864)">
+	<path id="path2255" d="M 47.243238,12.929372 L 47.243238,38.836954 L 68.578895,38.836954 L 77.341753,65.887518 L 12.191803,166.85089 L 44.195288,166.85089 L 90.676538,98.271996 L 121.15605,175.23276 L 169.16127,159.993 L 161.5414,136.37138 L 139.44375,143.22927 L 87.628587,12.929372 L 47.243238,12.929372 z " sketchjs:uid="1" style="fill: #fb7e14; fill-rule: evenodd; fill-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"/>
+</g>
+</svg>

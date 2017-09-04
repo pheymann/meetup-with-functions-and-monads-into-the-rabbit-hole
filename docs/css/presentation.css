@@ -1,0 +1,26 @@
+.color-green {
+    color: FFFAA6;
+}
+
+.color-red {
+    color: FC6E6E;
+}
+
+.color-darkred {
+    color: C01B1B;
+}
+
+.logo-img img {
+    border: 0;
+    opacity: 0.5;
+}
+
+.reveal section img {
+    background: none;
+    border:     none;
+    box-shadow: none;
+}
+
+.center-img img {
+    vertical-align: middle
+}

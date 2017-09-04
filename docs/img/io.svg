@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 4.1.465 <https://api.sketch.io/> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJ0aXRsZSI6IkRyYXdpbmciLCJkZXNjcmlwdGlvbiI6Im1hZGUgd2l0aCBTa2V0Y2hwYWQgLSBodHRwczovL3NrZXRjaC5pby9za2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImNsaXAiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsInNoYWRvd0NvbG9yIjoicmdiYSgyNTUsMjU1LDI1NSwwLjE1KSIsInNoYWRvd0JsdXIiOjEsImxpbmVXaWR0aCI6Mn19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjc4NiwiaGVpZ2h0Ijo0MjIsInNjYWxlIjoxLCJwYWdlcyI6eyJsZW5ndGgiOjEsImRhdGEiOlt7IndpZHRoIjo3ODYsImhlaWdodCI6NDIyfV19fQ==" sketchjs:version="4.1.465">
+<defs>
+	<radialGradient id="dna_925116002" gradientUnits="userSpaceOnUse" cx="57.201398584300364" cy="57.201398584300364" fx="57.201398584300364" fy="57.201398584300364" r="57.201398584300364">
+		<stop offset="0.06279181820714999" style="stop-color:#030101;"/>
+		<stop offset="0.1259619" style="stop-color:#0d000a;"/>
+		<stop offset="0.1884619" style="stop-color:#180013;"/>
+		<stop offset="0.25096189999999996" style="stop-color:#65024e;"/>
+		<stop offset="0.31346189999999996" style="stop-color:#b2048a;"/>
+		<stop offset="0.37596189999999996" style="stop-color:#b20356;"/>
+		<stop offset="0.43846189999999996" style="stop-color:#b20323;"/>
+		<stop offset="0.5009619" style="stop-color:#b20319;"/>
+		<stop offset="0.5634619" style="stop-color:#b2030f;"/>
+		<stop offset="0.6259619" style="stop-color:#8d0230;"/>
+		<stop offset="0.6902920499999999" style="stop-color:#680251;"/>
+		<stop offset="0.7546222" style="stop-color:#af1e4b;"/>
+		<stop offset="0.8247415191252401" style="stop-color:#f63b46;"/>
+		<stop offset="0.8750691" style="stop-color:#a71e45;"/>
+		<stop offset="0.95131794026088" style="stop-color:#590245;"/>
+	</radialGradient>
+</defs>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.728993095371395,-0.3876125044250666,0.3394019939244366,0.6383223123650029,13.369059112414561,62.78038503637231)">
+	<path id="c2fa4924_x2dab93_x2d45bf_x2d9173_x2d0bc5d4b2229a" style="vector-effect: non-scaling-stroke;" d="M100.5 0 C156 0 201 45 201 100.5 201 156 156 201 100.5 201 45 201 0 156 0 100.5 0 45 45 0 100.5 0 z"/>
+	<use xlink:href="#c2fa4924_x2dab93_x2d45bf_x2d9173_x2d0bc5d4b2229a" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 8.38;"/>
+	<use xlink:href="#c2fa4924_x2dab93_x2d45bf_x2d9173_x2d0bc5d4b2229a"/>
+</g>
+<g sketchjs:tool="pie" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.4275725564276511,0.8041470227292711,-0.8041470227292711,0.4275725564276511,140.79711538566596,33.364388769564414)">
+	<path id="05f2204b_x2daea7_x2d461b_x2db58a_x2d01bf865e9748" style="vector-effect: non-scaling-stroke;" d="M47 47 L47 0 C72.96 0 94 21.04 94 47 94 72.96 72.96 94 47 94 z"/>
+	<use xlink:href="#05f2204b_x2daea7_x2d461b_x2db58a_x2d01bf865e9748" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.86;"/>
+	<use xlink:href="#05f2204b_x2daea7_x2d461b_x2db58a_x2d01bf865e9748"/>
+</g>
+<g sketchjs:tool="circle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(-0.020675540253669432,-0.825376828316048,0.825376828316048,-0.020675540253669432,59.3740085951564,129.9579708340936)">
+	<path id="947e6b40_x2df6cf_x2d43ba_x2db267_x2db8f2cd504982" style="vector-effect: non-scaling-stroke;" d="M11.18 0 C17.36 0 22.36 5.01 22.36 11.18 22.36 17.36 17.36 22.36 11.18 22.36 5.01 22.36 0 17.36 0 11.18 0 5.01 5.01 0 11.18 0 z"/>
+	<use xlink:href="#947e6b40_x2df6cf_x2d43ba_x2db267_x2db8f2cd504982"/>
+	<use xlink:href="#947e6b40_x2df6cf_x2d43ba_x2db267_x2db8f2cd504982" style="fill: black; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="circle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(-0.020675540253669432,-0.825376828316048,0.825376828316048,-0.020675540253669432,168.67674098738667,69.97049647516536)">
+	<path id="f9bc6601_x2dd5bb_x2d4773_x2dab8c_x2d4eaccf5645b1" style="vector-effect: non-scaling-stroke;" d="M11.18 0 C17.36 0 22.36 5.01 22.36 11.18 22.36 17.36 17.36 22.36 11.18 22.36 5.01 22.36 0 17.36 0 11.18 0 5.01 5.01 0 11.18 0 z"/>
+	<use xlink:href="#f9bc6601_x2dd5bb_x2d4773_x2dab8c_x2d4eaccf5645b1"/>
+	<use xlink:href="#f9bc6601_x2dd5bb_x2d4773_x2dab8c_x2d4eaccf5645b1" style="fill: black; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,125,165)">
+	<polyline id="86dbb4e9_x2d804f_x2d412d_x2da9ac_x2d6027e02cd72f" style="vector-effect: non-scaling-stroke;" points="0,0 0,123 55,150 91,227"/>
+	<use xlink:href="#86dbb4e9_x2d804f_x2d412d_x2da9ac_x2d6027e02cd72f" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#86dbb4e9_x2d804f_x2d412d_x2da9ac_x2d6027e02cd72f"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,9,289)">
+	<polyline id="6fda7457_x2d6d2f_x2d48da_x2d8ca9_x2de10f3736fa09" style="vector-effect: non-scaling-stroke;" points="117,0 81,60 0,25"/>
+	<use xlink:href="#6fda7457_x2d6d2f_x2d48da_x2d8ca9_x2de10f3736fa09" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#6fda7457_x2d6d2f_x2d48da_x2d8ca9_x2de10f3736fa09"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,111,187)">
+	<polyline id="75a57c56_x2ded9b_x2d4ca4_x2d910d_x2d31393a8ee606" style="vector-effect: non-scaling-stroke;" points="0,24 32,0"/>
+	<use xlink:href="#75a57c56_x2ded9b_x2d4ca4_x2d910d_x2d31393a8ee606" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#75a57c56_x2ded9b_x2d4ca4_x2d910d_x2d31393a8ee606"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,112,193)">
+	<polyline id="7cfc9f8d_x2db1ce_x2d4f3b_x2d916f_x2d9df999b557a9" style="vector-effect: non-scaling-stroke;" points="0,17 56,50 114,0"/>
+	<use xlink:href="#7cfc9f8d_x2db1ce_x2d4f3b_x2d916f_x2d9df999b557a9" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#7cfc9f8d_x2db1ce_x2d4f3b_x2d916f_x2d9df999b557a9"/>
+</g>
+<g sketchjs:tool="polyline" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,142,182)">
+	<polyline id="047c8760_x2d035f_x2d43ff_x2d906b_x2d95461c70c95d" style="vector-effect: non-scaling-stroke;" points="0,7 29,17 78,0"/>
+	<use xlink:href="#047c8760_x2d035f_x2d43ff_x2d906b_x2d95461c70c95d" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#047c8760_x2d035f_x2d43ff_x2d906b_x2d95461c70c95d"/>
+</g>
+<g sketchjs:tool="ring" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.8041761414663254,-0.5943910610838057,0.5943910610838057,0.8041761414663254,200,153)">
+	<path id="c54ac89e_x2d4123_x2d48f3_x2db89b_x2dc07a84ef0ba8" style="vector-effect: non-scaling-stroke;" d="M57.2 0 C88.79 0 114.4 25.61 114.4 57.2 114.4 88.79 88.79 114.4 57.2 114.4 25.61 114.4 0 88.79 0 57.2 0 25.61 25.61 0 57.2 0 M57.2 0.57 L57.2 0.57 C25.93 0.57 0.57 25.93 0.57 57.2 0.57 88.48 25.93 113.83 57.2 113.83 88.48 113.83 113.83 88.48 113.83 57.2 113.83 25.93 88.48 0.57 57.2 0.57 z"/>
+	<use xlink:href="#c54ac89e_x2d4123_x2d48f3_x2db89b_x2dc07a84ef0ba8" style="stroke: url(#dna_925116002); stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 10.67;"/>
+	<use xlink:href="#c54ac89e_x2d4123_x2d48f3_x2db89b_x2dc07a84ef0ba8"/>
+</g>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(0.45482906016929964,0,0,0.45482906016929964,240.45481369974075,119.11934588466075)">
+	<path id="path2255" d="M 47.243238,12.929372 L 47.243238,38.836954 L 68.578895,38.836954 L 77.341753,65.887518 L 12.191803,166.85089 L 44.195288,166.85089 L 90.676538,98.271996 L 121.15605,175.23276 L 169.16127,159.993 L 161.5414,136.37138 L 139.44375,143.22927 L 87.628587,12.929372 L 47.243238,12.929372 z " sketchjs:uid="1" style="fill: #fb7e14; fill-rule: evenodd; fill-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"/>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,0.2704626334519573,356,337)">
+	<path id="4c70d76d_x2d6afb_x2d4f53_x2d8105_x2de95d1d20b120" style="vector-effect: non-scaling-stroke;" d="M140.5 0 C218.1 0 281 62.9 281 140.5 281 218.1 218.1 281 140.5 281 62.9 281 0 218.1 0 140.5 0 62.9 62.9 0 140.5 0 z"/>
+	<use xlink:href="#4c70d76d_x2d6afb_x2d4f53_x2d8105_x2de95d1d20b120" style="stroke: #000000; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#4c70d76d_x2d6afb_x2d4f53_x2d8105_x2de95d1d20b120"/>
+</g>
+<g sketchjs:tool="pencil" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,411,357)">
+	<path id="6a3d671b_x2d0314_x2d4708_x2db490_x2d0846b237886e" style="vector-effect: non-scaling-stroke;" d="M0 0 0 0 C0 15.88 0 17 0 17 " stroke-linecap="round" stroke-width="2"/>
+	<use xlink:href="#6a3d671b_x2d0314_x2d4708_x2db490_x2d0846b237886e" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#6a3d671b_x2d0314_x2d4708_x2db490_x2d0846b237886e"/>
+</g>
+<g sketchjs:tool="pencil" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,418,348)">
+	<path id="25ba3f4f_x2da160_x2d472d_x2d8699_x2d5a19a49f5c1a" style="vector-effect: non-scaling-stroke;" d="M0 0 0 0 C0.18 13.31 0.86 16.21 1 18.33 1.09 19.78 1 21.16 1 22 1 22.44 1 23 1 23 " stroke-linecap="round" stroke-width="2"/>
+	<use xlink:href="#25ba3f4f_x2da160_x2d472d_x2d8699_x2d5a19a49f5c1a" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#25ba3f4f_x2da160_x2d472d_x2d8699_x2d5a19a49f5c1a"/>
+</g>
+<g sketchjs:tool="pencil" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,398,366)">
+	<path id="67bd49ac_x2d90ba_x2d429d_x2d8345_x2dfd9c5a9482b3" style="vector-effect: non-scaling-stroke;" d="M0 0 0 0 C0 18.59 0 23.64 0 25.17 0 25.6 0 26 0 26 " stroke-linecap="round" stroke-width="2"/>
+	<use xlink:href="#67bd49ac_x2d90ba_x2d429d_x2d8345_x2dfd9c5a9482b3" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#67bd49ac_x2d90ba_x2d429d_x2d8345_x2dfd9c5a9482b3"/>
+</g>
+<g sketchjs:tool="pencil" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,390,359)">
+	<path id="845d26e0_x2d399f_x2d4094_x2d9c2b_x2d36049350b163" style="vector-effect: non-scaling-stroke;" d="M1 0 1 0 C1 20.96 0.53 31.41 1 36 1.23 38.2 1.85 40.85 2 40.83 2.11 40.82 2.02 39 2 37.83 1.98 36.18 2.2 33.7 1.83 31.83 1.49 30.1 0 27 0 27 " stroke-linecap="round" stroke-width="2"/>
+	<use xlink:href="#845d26e0_x2d399f_x2d4094_x2d9c2b_x2d36049350b163" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#845d26e0_x2d399f_x2d4094_x2d9c2b_x2d36049350b163"/>
+</g>
+<g sketchjs:tool="pencil" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,587,354)">
+	<path id="606a17f5_x2db64c_x2d4dca_x2dba2c_x2d1d1d3f317393" style="vector-effect: non-scaling-stroke;" d="M0 0 0 0 C0 29.19 0 31.14 0 32.17 0 32.57 0 33 0 33 " stroke-linecap="round" stroke-width="2"/>
+	<use xlink:href="#606a17f5_x2db64c_x2d4dca_x2dba2c_x2d1d1d3f317393" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#606a17f5_x2db64c_x2d4dca_x2dba2c_x2d1d1d3f317393"/>
+</g>
+<g sketchjs:tool="pencil" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,580,367)">
+	<path id="825a745f_x2d6759_x2d444d_x2d9465_x2d9b4c16875950" style="vector-effect: non-scaling-stroke;" d="M0 0 0 0 C0 11.19 0 17.84 0 21.83 0 24.59 0 27.48 0 28.83 0 29.39 0 30 0 30 " stroke-linecap="round" stroke-width="2"/>
+	<use xlink:href="#825a745f_x2d6759_x2d444d_x2d9465_x2d9b4c16875950" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#825a745f_x2d6759_x2d444d_x2d9465_x2d9b4c16875950"/>
+</g>
+<g sketchjs:tool="pencil" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,625,369)">
+	<path id="43f42b32_x2d515b_x2d49a1_x2d8a69_x2d862dbf519d53" style="vector-effect: non-scaling-stroke;" d="M0 0 0 0 C0 7.96 0 10.63 0 11.83 0 12.37 0 13 0 13 " stroke-linecap="round" stroke-width="2"/>
+	<use xlink:href="#43f42b32_x2d515b_x2d49a1_x2d8a69_x2d862dbf519d53" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#43f42b32_x2d515b_x2d49a1_x2d8a69_x2d862dbf519d53"/>
+</g>
+<g sketchjs:tool="pencil" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,1,423,357)">
+	<path id="6824d44f_x2dad34_x2d4145_x2d85d4_x2d38e81ecdae67" style="vector-effect: non-scaling-stroke;" d="M0 0 0 0 C0.18 19.96 0.61 30.08 1.17 34.17 1.41 35.96 2 38 2 38 " stroke-linecap="round" stroke-width="2"/>
+	<use xlink:href="#6824d44f_x2dad34_x2d4145_x2d85d4_x2d38e81ecdae67" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.85;"/>
+	<use xlink:href="#6824d44f_x2dad34_x2d4145_x2d85d4_x2d38e81ecdae67"/>
+</g>
+<g sketchjs:tool="rectangle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.981627183447664,0.1908089953765448,-0.11770684779721921,0.6055492365423901,631,186)">
+	<path id="faeb239d_x2d2451_x2d47b9_x2d994e_x2db515880eef1f" style="vector-effect: non-scaling-stroke;" d="M16.94 0 L137.06 0 Q144.08 0 149.04 8.04 154 16.09 154 27.46 L154 126.54 Q154 137.91 149.04 145.96 144.08 154 137.06 154 L16.94 154 Q9.92 154 4.96 145.96 0 137.91 0 126.54 L0 27.46 Q0 16.09 4.96 8.04 9.92 0 16.94 0 z"/>
+	<use xlink:href="#faeb239d_x2d2451_x2d47b9_x2d994e_x2db515880eef1f" style="stroke: #000000; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 3.31;"/>
+	<use xlink:href="#faeb239d_x2d2451_x2d47b9_x2d994e_x2db515880eef1f"/>
+</g>
+<g sketchjs:tool="text" transform="matrix(0.9781476007338057,0.20791169081775934,-0.20791169081775934,0.9781476007338057,632.0000000000001,186)" style="fill: #220687; mix-blend-mode: source-over; fill-opacity: 1;">
+	<g sketchjs:uid="1">
+		<g sketchjs:uid="2">
+			<path d=" M 36.84820556640625 81 L 36.84820556640625 13.0865478515625 L 45.83538818359375 13.0865478515625 L 45.83538818359375 81 L 36.84820556640625 81 Z Z M 58.945556640625 47.9234619140625 Q 58.945556640625 31.01458740234375 68.025390625 21.448333740234375 Q 77.105224609375 11.882080078125 91.4661865234375 11.882080078125 Q 100.87030029296875 11.882080078125 108.42138671875 16.37567138671875 Q 115.97247314453125 20.8692626953125 119.93331909179688 28.906768798828125 Q 123.8941650390625 36.94427490234375 123.8941650390625 47.13592529296875 Q 123.8941650390625 57.466552734375 119.724853515625 65.619873046875 Q 115.5555419921875 73.773193359375 107.91180419921875 77.96566772460938 Q 100.26806640625 82.15814208984375 91.41986083984375 82.15814208984375 Q 81.8304443359375 82.15814208984375 74.27935791015625 77.52557373046875 Q 66.728271484375 72.89300537109375 62.8369140625 64.878662109375 Q 58.945556640625 56.86431884765625 58.945556640625 47.9234619140625 Z M 68.210693359375 48.06243896484375 Q 68.210693359375 60.3387451171875 74.81210327148438 67.40341186523438 Q 81.41351318359375 74.46807861328125 91.37353515625 74.46807861328125 Q 101.51885986328125 74.46807861328125 108.07394409179688 67.33392333984375 Q 114.6290283203125 60.19976806640625 114.6290283203125 47.089599609375 Q 114.6290283203125 38.79730224609375 111.82632446289062 32.612823486328125 Q 109.02362060546875 26.4283447265625 103.62667846679688 23.023406982421875 Q 98.229736328125 19.61846923828125 91.51251220703125 19.61846923828125 Q 81.96942138671875 19.61846923828125 75.09005737304688 26.173553466796875 Q 68.210693359375 32.7286376953125 68.210693359375 48.06243896484375 Z" sketchjs:uid="3" style="paint-order: stroke fill markers;"/>
+		</g>
+	</g>
+</g>
+<g sketchjs:tool="rectangle" style="fill: none; mix-blend-mode: source-over;" transform="matrix(0.1128747795414462,0,0,1,679,287)">
+	<path id="46555360_x2d27b4_x2d4ef8_x2d8816_x2d0788103a4776" style="vector-effect: non-scaling-stroke;" d="M0 0 L108 0 108 108 0 108 z"/>
+	<use xlink:href="#46555360_x2d27b4_x2d4ef8_x2d8816_x2d0788103a4776" style="stroke: #000000; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 3.31;"/>
+	<use xlink:href="#46555360_x2d27b4_x2d4ef8_x2d8816_x2d0788103a4776" style="fill: #000000; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="eraser" style="fill: none; mix-blend-mode: destination-out;" transform="matrix(1,0,0,1,689,285)">
+	<filter filterUnits="userSpaceOnUse" id="e289e8f0_x2d5a95_x2d4182_x2db396_x2d93f9e33e6c88_blur">
+		<feGaussianBlur/>
+	</filter>
+	<path id="e289e8f0_x2d5a95_x2d4182_x2db396_x2d93f9e33e6c88" style="vector-effect: non-scaling-stroke;" d="M0 0 L0 0 " filter="url(#e289e8f0_x2d5a95_x2d4182_x2db396_x2d93f9e33e6c88_blur)" stroke-linecap="round" stroke-width="12.38"/>
+	<use xlink:href="#e289e8f0_x2d5a95_x2d4182_x2db396_x2d93f9e33e6c88" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1;"/>
+	<use xlink:href="#e289e8f0_x2d5a95_x2d4182_x2db396_x2d93f9e33e6c88"/>
+</g>
+<g sketchjs:tool="eraser" style="fill: none; mix-blend-mode: destination-out;" transform="matrix(1,0,0,1,681,285)">
+	<filter filterUnits="userSpaceOnUse" id="5da86439_x2dc8fe_x2d4d14_x2d96c3_x2df9ade57cca2b_blur">
+		<feGaussianBlur/>
+	</filter>
+	<path id="5da86439_x2dc8fe_x2d4d14_x2d96c3_x2df9ade57cca2b" style="vector-effect: non-scaling-stroke;" d="M0 0 L0 0 " filter="url(#5da86439_x2dc8fe_x2d4d14_x2d96c3_x2df9ade57cca2b_blur)" stroke-linecap="round" stroke-width="12.38"/>
+	<use xlink:href="#5da86439_x2dc8fe_x2d4d14_x2d96c3_x2df9ade57cca2b" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1;"/>
+	<use xlink:href="#5da86439_x2dc8fe_x2d4d14_x2d96c3_x2df9ade57cca2b"/>
+</g>
+<g sketchjs:tool="eraser" style="fill: none; mix-blend-mode: destination-out;" transform="matrix(1,0,0,1,674.3529411764706,284.88235294117646)">
+	<filter filterUnits="userSpaceOnUse" id="152a1b95_x2d9eb8_x2d4176_x2dbefe_x2d0bc2ba66fc7f_blur">
+		<feGaussianBlur/>
+	</filter>
+	<path id="152a1b95_x2d9eb8_x2d4176_x2dbefe_x2d0bc2ba66fc7f" style="vector-effect: non-scaling-stroke;" d="M3.53 0 3.53 0 C5.1 0 5.56 0 5.88 0 6.11 0 6.29 -0.08 6.47 0 6.69 0.09 6.86 0.39 7.06 0.59 7.25 0.78 7.4 1.01 7.65 1.18 7.94 1.38 8.4 1.57 8.73 1.67 8.97 1.74 9.18 1.75 9.41 1.76 9.64 1.78 9.85 1.76 10.1 1.76 10.4 1.76 10.78 1.76 11.08 1.76 11.33 1.76 11.56 1.68 11.76 1.76 11.99 1.86 12.08 2.18 12.35 2.35 12.75 2.6 13.56 2.86 14.02 2.94 14.32 2.99 14.52 2.94 14.8 2.94 15.13 2.94 15.56 2.94 15.88 2.94 16.14 2.94 16.32 2.94 16.57 2.94 16.87 2.94 17.25 2.94 17.55 2.94 17.8 2.94 17.98 2.88 18.24 2.94 18.58 3.02 18.98 3.33 19.41 3.53 19.92 3.76 21.04 3.97 21.08 4.22 21.1 4.37 20.76 4.61 20.49 4.71 20.11 4.84 19.43 4.71 18.92 4.71 18.45 4.71 17.98 4.71 17.55 4.71 17.17 4.71 16.86 4.77 16.47 4.71 15.97 4.62 15.32 4.33 14.8 4.12 14.35 3.93 14 3.71 13.53 3.53 12.97 3.31 12.28 3.04 11.67 2.94 11.1 2.85 10.56 2.94 10 2.94 9.44 2.94 8.77 2.97 8.33 2.94 8.05 2.92 7.9 2.91 7.65 2.84 7.3 2.75 7 2.5 6.47 2.35 5.47 2.08 3.1 2.29 1.96 1.76 1.09 1.37 0 0 0 0 " filter="url(#152a1b95_x2d9eb8_x2d4176_x2dbefe_x2d0bc2ba66fc7f_blur)" stroke-linecap="round" stroke-width="7.32"/>
+	<use xlink:href="#152a1b95_x2d9eb8_x2d4176_x2dbefe_x2d0bc2ba66fc7f" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1;"/>
+	<use xlink:href="#152a1b95_x2d9eb8_x2d4176_x2dbefe_x2d0bc2ba66fc7f"/>
+</g>
+</svg>
