@@ -33,7 +33,7 @@
             <ul>
               <li>basic ideas of Functional Programming</li>
               <li class="fragment fade-up">first concepts</li>
-              <li class="fragment fade-up">how to use it with Cats</li>
+              <li class="fragment fade-up">(hopefully) some good code examples</li>
             </ul>
           </section>
         </section>
@@ -67,6 +67,9 @@
                 def combine(a: Score, b: Score) = Score(a.value + b.value)
                 def equal(a: Score, b: Score)   = a.value == b.value
             </code></pre>
+            <aside class="notes">
+	      - data no behaviour in it self
+	    </aside>
           </section>
           <section>
             <h3>Immutable data</h3>
@@ -85,6 +88,10 @@
                 final case class Con[A](a: A, List[A]) extends List[A]
                 final case class Nil extends List[Nothing]
             </code></pre>
+            <aside class="notes">
+              - data stays the same over time<br/>
+              - can be modify without interferrence
+	    </aside>
           </section>
           <section>
             <h3>Operations are Functions</h3>
@@ -103,6 +110,10 @@
                 def loadUserScore(userId: UserId): Future[Score] =
                   rest.get(s"backend.com/user/$userId/score").map(fromJson(_))
             </code></pre>
+            <aside class="notes">
+              - easy to test <br/>
+              - "easy to understand"
+	    </aside>
           </section>
           <section>
             <h3>Composability</h3>
@@ -112,6 +123,9 @@
                 def updAndShow(a: Score, i: Int): String =
                   show(update(a, i))
             </code></pre>
+            <aside class="notes">
+              - complexe functions from simple ones
+	    </aside>
           </section>
           <section>
             <h3>Side Effect abstraction</h3>
@@ -122,10 +136,15 @@
 
                 // we do
                 def loadScoreWithBiasF[F: Functor](userId: UserId)
-                                                  (implicit loader: Loader[F])
+                                                  (implicit l: Loader[F])
                     : F[Score] =
-                  loader(userId).map(s => update(s, 1))
-            </code></pre>                  
+                  l(userId).map(s => update(s, 1))
+            </code></pre>
+            <aside class="notes">
+              - separation side effects from app logic<br/>
+              - easier to test<br/>
+              - thin side effect layer
+	    </aside>
           </section>
         </section>
 
@@ -159,13 +178,18 @@
                 object Order {
                   ...
  
-                implicit val scoreOrder = new Order[Score] {
-                  def compare(l: Score, r: Score): Int =
-                    intOrder.compare(l.value, r.value)
+                  implicit val scoreOrder = new Order[Score] {
+                    def compare(l: Score, r: Score): Int =
+                      intOrder.compare(l.value, r.value)
                 }
 
                 Order.scoreOrder.compare(Score(2), Score(1)) // => 1
             </code></pre>
+            <aside class="notes">
+              - imagine operation for multiple types<br/>
+              - still separation of data and behavior -> no inher.<br/>
+              - instance for every type I need
+	    </aside>
           </section>
           <section>
             <h3>Add some implicit resolution</h3>
@@ -179,6 +203,10 @@
 
                 Order[Score].compare(Score(2), Score(1)) // => 1
             </code></pre>
+            <aside class="notes">
+              - but I still have to explicitly search<br/>
+              - compile should do that
+	    </aside>
           </section>
           <section>
             <h3>What does all this Typeclass stuff mean to us?</h3>
@@ -189,8 +217,8 @@
 
             <ul>
               <li class="fragment fade-up">kernel      (algebraic structures)</li>
-              <li class="fragment fade-up">kernel-laws (scala-check framework to test properties)</li>
-              <li class="fragment fade-up">core        (structures from CATegory theory)</li>
+              <li class="fragment fade-up">core        (type classes including CAT)</li>
+              <li class="fragment fade-up">laws        (testing typeclasses)</li>
             </ul>
           </section>
         </section>
@@ -208,6 +236,26 @@
             </ul>
           </section>
           <section>
+            <h3>User and Recommendation</h3>
+            <pre><code class="scala" data-trim>
+                final case class User(id: UserId,
+                                      firstName: FirstName,
+                                      lastName: LastName,
+                                      age: Age,
+                                      city: City,
+                                      job: Job)
+
+                final case class Reco[R](element: R, score: Score)
+
+                object Order {
+                  implicit def recoOrder[R] = Order.from[Reco[R]] {
+                    case (l, r) =>
+                      Order[Score].compare(l.score, r.score)
+                  }
+                }
+            </pre></code>
+          </section>          
+          <section>
             <h3>Score Logic</h3>
             <pre><code class="scala" data-trim>
                 if (ul.age == ur.age && ul.city == ur.city &&
@@ -223,26 +271,6 @@
                          ul.job == ur.job) 
                   Score(1)
                 else Score(0)
-            </pre></code>
-          </section>
-          <section>
-            <h3>User and Recommendation</h3>
-            <pre><code class="scala" data-trim>
-                final case class User(id: UserId,
-                                      firstName: FirstName,
-                                      lastName: LastName,
-                                      age: Age,
-                                      city: City,
-                                      job: Job)
-
-                final case class Recommendation[R](element: R, score: Score)
-
-                object Order {
-                  implicit def recoOrder[R] = Order.from[Recommendation[R]] {
-                    case (l, r) =>
-                      Order[Score].compare(l.score, r.score)
-                  }
-                }
             </pre></code>
           </section>
           <section>
@@ -266,13 +294,13 @@
             <pre><code class="scala" data-trim>
                 def createRecos(base: User, elems: Seq[User])
                                (implicit scorer: RecoScorer[User, User])
-                    : Seq[Recommendation[User]] =
+                    : Seq[Reco[User]] =
                   elems
                     .map { elem =>
-                      Recommendation(elem, scorer.score(base, elem))
+                      Reco(elem, scorer.score(base, elem))
                     }
                     .filter(reco => Order[Score].gt(reco.score, Score(0)))
-                    .sortWith((l, r) => Order[Recommendation[User]].gt(l, r))
+                    .sortWith((l, r) => Order[Reco[User]].gt(l, r))
             </pre></code>
           </section>
           <section>
@@ -298,7 +326,7 @@
             <h3>How to compose and "hide"?</h3>
             <pre><code class="scala" data-trim>
                 def recosForUser(userId: UserId)
-                    : Future[Seq[Recommendation[User]]] = {
+                    : Future[Seq[Reco[User]]] = {
                   val userF = FindUser(userId)
                       
                   createRecos(userF, FetchUsers(userF))
@@ -316,7 +344,7 @@
                   ...
                 }
 
-                Functor(userF).map(u => u.copy(age = 0))
+                Functor[Future].map(userF)(u => u.copy(age = 0))
             </pre></code>
           </section>
           <section>
@@ -333,14 +361,14 @@
                   ...
                 }
                 
-                Monad(userF).flatMap(u => FetchUsers(u))
+                Monad[Future].flatMap(userF)(u => FetchUsers(u))
             </pre></code>
           </section>
           <section>
             <h3>Try it again</h3>
             <pre><code class="scala" data-trim>
                 def recosForUser(userId: UserId)
-                    : Future[Seq[Recommendation[User]]] =
+                    : Future[Seq[Reco[User]]] =
                   Monad[Future].flatMap(FindUser(userId)) { user =>
                     Functor[Future].map(FetchUsersExcept(user)) { users =>
                       createRecos(user, users)
@@ -366,7 +394,7 @@
                       : Kleisli[F, A, C] = ???
 
                   def flatMap[C](f: B => Kleisli[F, A, C])
-                                (implicit F: FlatMap[F])
+                                (implicit F: Monad[F])
                       : Kleisli[F, A, C] = ???
                 }
             </pre></code>
@@ -381,25 +409,29 @@
 
                 def recosForUser[F[_]](userId: UserId)
                                       (implicit F: Monad[F])
-                    : Kleisli[F, UserReader[F], Seq[Recommendation]] =
+                    : Kleisli[F, UserReader[F], Seq[Reco]] =
                   for {
                     user  <- Kleisli[...](_.findUser(userId))
                     recos <- Kleisli[...](_.fetchUsersExcept(user))
-                  } yield createRecos[User, User](user, recos)
+                  } yield createRecos(user, recos)
             </pre></code>
           </section>
           <section>
             <h3>Run it</h3>
             <pre><code class="scala" data-trim>
-                // server => Future[Seq[Recommendation]]
+                // server => Future[Seq[Reco]]
                 UserRecos.recosForUser[Future](request.uId)(dbReader)
 
-                // unit tests => Id[Seq[Recommendation]]
+                // unit tests => Id[Seq[Reco]]
                 // part of cats
                 type Id[A] = A
 
                 UserRecos.recosForUser[Id](request.uId)(fakeReader)
             </pre></code>
+            <aside class="notes">
+	      - better/cleaner solutions with Free<br/>
+              - no parallel execution -> Applicative
+	    </aside>
           </section>
         </section>
         <section>
