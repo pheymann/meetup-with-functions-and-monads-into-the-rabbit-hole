@@ -59,11 +59,6 @@
             <pre><code class="scala" data-trim>
                 final case class Score(value: Int)                      
 
-                object Score {
-                  val Highest = Score(5)
-                  val Lowest  = Score(0)
-                }
-
                 def combine(a: Score, b: Score) = Score(a.value + b.value)
                 def equal(a: Score, b: Score)   = a.value == b.value
             </code></pre>
@@ -74,13 +69,7 @@
           <section>
             <h3>Immutable data</h3>
             <pre><code class="scala" data-trim>
-                def update(a: Score, i: Int) = {
-                  val r = Score(a.value + i)
-
-                  if (r.value < Score.Lowest.value)       Score.Lowest
-                  else if (r.value > Score.Highest.value) Score.Highest
-                  else r
-                }
+                def update(a: Score, i: Int) = Score(a.value + i)
             </code></pre>
             <h4>or</h4>
             <pre><code class="scala" data-trim>
@@ -96,15 +85,10 @@
           <section>
             <h3>Operations are Functions</h3>
             <pre><code class="scala" data-trim>
-                def update(a: Score, i: Int) = {
-                  val r = Score(a.value + i)
+                // pure function
+                def update(a: Score, i: Int) = Score(a.value + i)
 
-                  if (r.value < Score.Lowest.value)       Score.Lowest
-                  else if (r.value > Score.Highest.value) Score.Highest
-                  else r
-                }
-
-                // not something like this
+                // side effects -> not pure functions
                 def guessAScore = Score(rand.nextInt())
 
                 def loadUserScore(userId: UserId): Future[Score] =
@@ -171,23 +155,37 @@
           <section>
             <h3>What Wikipedia means ...</h3>
             <pre><code class="scala" data-trim>
+                // describing behaviour
                 trait Order[A] {                      
                   def compare(l: A, r: A): Int
                 }
 
+                // how we want to use it
+                Order[Score].compare(Score(2), Score(1)) // => 1
+            </code></pre>
+            <aside class="notes">
+              - imagine operation for multiple types<br/>
+              - still separation of data and behavior -> no inher.<br/>
+	    </aside>
+          </section>
+          <section>
+            <h3>What Wikipedia means ...</h3>
+            <pre><code class="scala" data-trim>
+                // providing type specific instances
                 object Order {
-                  ...
+                  implicit val intOrder = new Order[Int] {
+                    def compare(l: Int, r: Int): Int = l.compare(r)
+                  }
  
                   implicit val scoreOrder = new Order[Score] {
                     def compare(l: Score, r: Score): Int =
                       intOrder.compare(l.value, r.value)
                 }
 
-                Order.scoreOrder.compare(Score(2), Score(1)) // => 1
+                // how we want to use it
+                Order[Score].compare(Score(2), Score(1)) // => 1
             </code></pre>
             <aside class="notes">
-              - imagine operation for multiple types<br/>
-              - still separation of data and behavior -> no inher.<br/>
               - instance for every type I need
 	    </aside>
           </section>
@@ -212,15 +210,6 @@
             <h3>What does all this Typeclass stuff mean to us?</h3>
             <p class="fragment fade-up">We get type (data) specific behaviour without intermingling data and operations.</p>
           </section>
-          <section>
-            <h3>The Typelevel Cats have already prepared something</h3>
-
-            <ul>
-              <li class="fragment fade-up">kernel      (algebraic structures)</li>
-              <li class="fragment fade-up">core        (type classes including CAT)</li>
-              <li class="fragment fade-up">laws        (testing typeclasses)</li>
-            </ul>
-          </section>
         </section>
         <section>
           <section>
@@ -230,7 +219,8 @@
           <section>
             <h3>Our Task</h3>
             <ul>
-              <li class="fragment fade-up">users recommender (what a suprise)</li>
+              <li class="fragment fade-up">rest service</li>
+              <li class="fragment fade-up">find similar users (recommendations) for a given user</li>
               <li class="fragment fade-up">recommendation ordered by score (desc)</li>
               <li class="fragment fade-up">users are read from external source (io)</li>
             </ul>
@@ -245,32 +235,14 @@
                                       city: City,
                                       job: Job)
 
-                final case class Reco[R](element: R, score: Score)
+                final case class Reco(user: User, score: Score)
 
                 object Order {
-                  implicit def recoOrder[R] = Order.from[Reco[R]] {
+                  implicit val recoOrder = Order.from[Reco] {
                     case (l, r) =>
                       Order[Score].compare(l.score, r.score)
                   }
                 }
-            </pre></code>
-          </section>          
-          <section>
-            <h3>Score Logic</h3>
-            <pre><code class="scala" data-trim>
-                if (ul.age == ur.age && ul.city == ur.city &&
-                    ul.job == ur.job)      
-                  Score(3)
-                else if (ul.age == ur.age && ul.city == ur.city)                     
-                  Score(2)
-                else if (ul.age == ur.age && ul.job == ur.job)                       
-                  Score(2)
-                else if (ul.city == ur.city && ul.job == ur.job)                     
-                  Score(2)
-                else if (ul.age == ur.age || ul.city == ur.city ||
-                         ul.job == ur.job) 
-                  Score(1)
-                else Score(0)
             </pre></code>
           </section>
           <section>
@@ -283,7 +255,7 @@
 
                 object RecoScorer {
                   implicit val userScorer = new RecoScorer[User, User] {
-                    // see score logic
+                    // some fancy logic
                     def score(base: User, elem: User): Score = ???
                   }
                 }
@@ -292,15 +264,15 @@
           <section>
             <h3>Recommender</h3>
             <pre><code class="scala" data-trim>
-                def createRecos(base: User, elems: Seq[User])
+                def createRecos(base: User, users: Seq[User])
                                (implicit scorer: RecoScorer[User, User])
-                    : Seq[Reco[User]] =
-                  elems
-                    .map { elem =>
-                      Reco(elem, scorer.score(base, elem))
+                    : Seq[Reco] =
+                  users
+                    .map { user =>
+                      Reco(user, scorer.score(base, user))
                     }
                     .filter(reco => Order[Score].gt(reco.score, Score(0)))
-                    .sortWith((l, r) => Order[Reco[User]].gt(l, r))
+                    .sortWith((l, r) => Order[Reco].gt(l, r))
             </pre></code>
           </section>
           <section>
@@ -308,7 +280,7 @@
             <ul>
               <li class="fragment fade-up">separation of behaviour and data (check)</li>
               <li class="fragment fade-up">immutable data (check)</li>
-              <li class="fragment fade-up">composability (check)</li>
+              <li class="fragment fade-up">pure function (check)</li>
             </ul>
           </section>
           <section>
@@ -316,20 +288,23 @@
             <img src="img/io.svg" width="800" height="600">
           </section>
           <section>
-            <h3>What effects do we need?</h3>
+            <h3>What about our side effects?</h3>
             <pre><code class="scala" data-trim>
-                type FindUser         = UserId => Future[User]
-                type FetchUsersExcept = User   => Future[Seq[User]]
+                def findUser(id: UserId):         Future[User]
+                def fetchUsersExcept(user: User): Future[Seq[User]]
             </pre></code>
           </section>
           <section>
             <h3>How to compose and "hide"?</h3>
             <pre><code class="scala" data-trim>
-                def recosForUser(userId: UserId)
-                    : Future[Seq[Reco[User]]] = {
-                  val userF = FindUser(userId)
+                def findUser(id: UserId):         Future[User]
+                def fetchUsersExcept(user: User): Future[Seq[User]]
+
+                // nope
+                def recosForUser(userId: UserId): Future[Seq[Reco]] = {
+                  val userF = findUser(userId)
                       
-                  createRecos(userF, FetchUsers(userF))
+                  createRecos(userF, fetchUsersExcept(userF))
                 }
             </pre></code>
           </section>
@@ -340,11 +315,9 @@
                 trait Functor[F[_]] {
                   // F => F
                   def map[A, B](fa: F[A])(f: A => B): F[B]
-
-                  ...
                 }
 
-                Functor[Future].map(userF)(u => u.copy(age = 0))
+                Functor[Future].map(findUser(id))(u => u.copy(age = 0))
             </pre></code>
           </section>
           <section>
@@ -357,20 +330,20 @@
                   def pure[A](x: A): F[A]
                   // F[F] => F
                   def flatMap[A, B](fa: F[A])(f: A => F[B]): F[B]
-
-                  ...
                 }
-                
-                Monad[Future].flatMap(userF)(u => FetchUsers(u))
+
+                Monad[Future].flatMap(findUser(id))(u => fetchUsersExcept(u))
             </pre></code>
           </section>
           <section>
             <h3>Try it again</h3>
             <pre><code class="scala" data-trim>
-                def recosForUser(userId: UserId)
-                    : Future[Seq[Reco[User]]] =
-                  Monad[Future].flatMap(FindUser(userId)) { user =>
-                    Functor[Future].map(FetchUsersExcept(user)) { users =>
+                def findUser(id: UserId):         Future[User]
+                def fetchUsersExcept(user: User): Future[Seq[User]]
+                
+                def recosForUser(userId: UserId): Future[Seq[Reco]] =
+                  Monad[Future].flatMap(findUser(userId)) { user =>
+                    Functor[Future].map(fetchUsersExcept(user)) { users =>
                       createRecos(user, users)
                     }
                   }
@@ -403,7 +376,7 @@
             <h3>Wrap it up</h3>
             <pre><code class="scala" data-trim>
                 trait UserReader[F[_]] {
-                  def findUser(userId: UserId): F[User]
+                  def findUser(userId: UserId):     F[User]
                   def fetchUsersExcept(user: User): F[Seq[User]]
                 }
 
@@ -423,16 +396,20 @@
                 UserRecos.recosForUser[Future](request.uId)(dbReader)
 
                 // unit tests => Id[Seq[Reco]]
-                // part of cats
                 type Id[A] = A
 
                 UserRecos.recosForUser[Id](request.uId)(fakeReader)
             </pre></code>
-            <aside class="notes">
-	      - better/cleaner solutions with Free<br/>
-              - no parallel execution -> Applicative
-	    </aside>
           </section>
+        </section>
+        <section>
+          <h3>The Typelevel Cats have already prepared something</h3>
+
+          <ul>
+            <li class="fragment fade-up">kernel      (algebraic structures)</li>
+            <li class="fragment fade-up">core        (type classes including CAT)</li>
+            <li class="fragment fade-up">laws        (testing typeclasses)</li>
+          </ul>
         </section>
         <section>
           <img src="img/question.svg" height="610" width="300">
