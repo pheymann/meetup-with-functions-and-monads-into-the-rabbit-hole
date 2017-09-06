@@ -1,4 +1,4 @@
-# [WIP] With Functions and Monads into the rabbit hole
+# With Functions and Monads into the rabbit hole
  - [Follow me](https://pheymann.github.io/meetup-with-functions-and-monads-into-the-rabbit-hole/) to the Slideshow
  - And [here](https://www.meetup.com/de-DE/Scala-Hamburg/events/240727416/?comment_table_id=482166437&comment_table_name=event_comment) you get the meetup description
  
