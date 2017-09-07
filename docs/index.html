@@ -209,6 +209,11 @@
                 import Order._
 
                 Order[User].compare(user1, user2)
+                
+                def older(usr1: User, usr2: User)
+                         (implicit o: Order[User]) =
+                  if (o.compare(usr1, usr2) > 1) usr1
+                  else                           usr2
             </code></pre>
             <aside class="notes">
               - but I still have to explicitly search<br/>
@@ -218,6 +223,7 @@
           <section>
             <h3>What does all this Typeclass stuff mean to us?</h3>
             <p class="fragment fade-up">We get type (data) specific behaviour without intermingling data and operations.</p>
+            <p class="fragment fade-up">And we get the same behavior for different types.</p>
           </section>
         </section>
         <section>
