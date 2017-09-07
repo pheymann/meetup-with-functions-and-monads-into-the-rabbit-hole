@@ -27,7 +27,7 @@
 
         <section>
           <section>
-            <h2>What is it about?</h2>
+            <h2>What is this talk about?</h2>
           </section>
           <section>
             <ul>
@@ -40,7 +40,7 @@
         
         <section>
           <section>
-            <h2>What this talk is NOT about</h2>
+            <h2>What it is NOT about</h2>
           </section>
           <section>
             <img src="img/missionary.svg" height="610" width="780">
@@ -57,10 +57,12 @@
           <section>
             <h3>Separate operation and Data</h3>
             <pre><code class="scala" data-trim>
+                // data
                 val score: Double = 0.0
                 
                 final case class User(name: String, age: Int)                      
 
+                // operations
                 def combine(a: Double, b: Double) = a + b
                 def equal(a: User, b: User) =  a.name == b.name && ...
             </code></pre>
@@ -73,9 +75,8 @@
             <pre><code class="scala" data-trim>
                 val newScore = score + 1.0
                 val newUser  = User(user.name, user.age + 1)
-            </code></pre>
-            <h4>or</h4>
-            <pre><code class="scala" data-trim>
+
+                // also represented by the data structures
                 trait List[A]                      
                 final case class Con[A](a: A, List[A]) extends List[A]
                 final case class Nil extends List[Nothing]
@@ -165,6 +166,11 @@
 
                 // how we want to use it
                 Order[User].compare(user1, user2)
+
+                def older(usr1: User, usr2: User)
+                         (implicit o: Order[User]) =
+                  if (o.compare(usr1, usr2) > 1) usr1
+                  else                           usr2
             </code></pre>
             <aside class="notes">
               - imagine operation for multiple types<br/>
@@ -358,9 +364,19 @@
             <h3>Better, but ...</h3>
             <p>
               ... we still execute effects directly.
-              What we need is something to leave effect execution to the user of our function.
-              In other words effects needs to be encoded in the return type.
             </p>
+            <pre><code class="scala" data-trim>
+                trait UserReader[F[_]] {
+                  def findUser(userId: UserId):     F[User]
+                  def fetchUsersExcept(user: User): F[Seq[User]]
+                }
+                
+                def recosForUser(userId: UserId)
+                    : UserReader[F] => F[Seq[Reco]] =
+                  for {
+                  user <- reader => reader.findUser(userId)
+                  ...
+            </pre></code>
           </section>
           <section>
             <h3>Function Monad</h3>
