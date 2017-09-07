@@ -57,10 +57,12 @@
           <section>
             <h3>Separate operation and Data</h3>
             <pre><code class="scala" data-trim>
-                final case class Score(value: Int)                      
+                val score: Double = 0.0
+                
+                final case class User(name: String, age: Int)                      
 
-                def combine(a: Score, b: Score) = Score(a.value + b.value)
-                def equal(a: Score, b: Score)   = a.value == b.value
+                def combine(a: Double, b: Double) = a + b
+                def equal(a: User, b: User) =  a.name == b.name && ...
             </code></pre>
             <aside class="notes">
 	      - data no behaviour in it self
@@ -69,7 +71,8 @@
           <section>
             <h3>Immutable data</h3>
             <pre><code class="scala" data-trim>
-                def update(a: Score, i: Int) = Score(a.value + i)
+                val newScore = score + 1.0
+                val newUser  = User(user.name, user.age + 1)
             </code></pre>
             <h4>or</h4>
             <pre><code class="scala" data-trim>
@@ -86,13 +89,13 @@
             <h3>Operations are Functions</h3>
             <pre><code class="scala" data-trim>
                 // pure function
-                def update(a: Score, i: Int) = Score(a.value + i)
+                def birthday(a: User) = User(user.name, user.age + 1)
 
                 // side effects -> not pure functions
-                def guessAScore = Score(rand.nextInt())
+                def guessAScore = rand.nextInt()
 
-                def loadUserScore(userId: UserId): Future[Score] =
-                  rest.get(s"backend.com/user/$userId/score").map(fromJson(_))
+                def loadUser(userId: Long): Future[User] =
+                  rest.get(s"backend.com/user/$userId").map(fromJson(_))
             </code></pre>
             <aside class="notes">
               - easy to test <br/>
@@ -102,10 +105,10 @@
           <section>
             <h3>Composability</h3>
             <pre><code class="scala" data-trim>
-                def show(a: Score) = s"score = ${a.value}"                      
+                def show(a: User) = s"user = {${a.name}, ${a.age}}"                      
 
-                def updAndShow(a: Score, i: Int): String =
-                  show(update(a, i))
+                def celebrate(a: User): String =
+                  show(birthday(a))
             </code></pre>
             <aside class="notes">
               - complexe functions from simple ones
@@ -115,14 +118,14 @@
             <h3>Side Effect abstraction</h3>
             <pre><code class="scala" data-trim>
                 // instead of                      
-                def loadScoreWithBias(userId: UserId): Future[Score] =
-                  loadUserScore(userId).map(s => update(s, 1))
+                def loadUserAge(userId: UserId): Future[Int] =
+                  loadUser(userId).map(_.age)
 
-                // we do
-                def loadScoreWithBiasF[F: Functor](userId: UserId)
-                                                  (implicit l: Loader[F])
+                // we want
+                def loadUserAge[F: Functor](userId: UserId)
+                                           (implicit l: Loader[F])
                     : F[Score] =
-                  l(userId).map(s => update(s, 1))
+                  l(userId).map(_.age)
             </code></pre>
             <aside class="notes">
               - separation side effects from app logic<br/>
@@ -161,7 +164,7 @@
                 }
 
                 // how we want to use it
-                Order[Score].compare(Score(2), Score(1)) // => 1
+                Order[User].compare(user1, user2)
             </code></pre>
             <aside class="notes">
               - imagine operation for multiple types<br/>
@@ -177,13 +180,13 @@
                     def compare(l: Int, r: Int): Int = l.compare(r)
                   }
  
-                  implicit val scoreOrder = new Order[Score] {
-                    def compare(l: Score, r: Score): Int =
-                      intOrder.compare(l.value, r.value)
+                  implicit val userOrder = new Order[User] {
+                    def compare(l: User, r: User): Int =
+                      intOrder.compare(l.age, r.age)
                 }
 
                 // how we want to use it
-                Order[Score].compare(Score(2), Score(1)) // => 1
+                Order[User].compare(user1, user2)
             </code></pre>
             <aside class="notes">
               - instance for every type I need
@@ -199,7 +202,7 @@
 
                 import Order._
 
-                Order[Score].compare(Score(2), Score(1)) // => 1
+                Order[User].compare(user1, user2)
             </code></pre>
             <aside class="notes">
               - but I still have to explicitly search<br/>
@@ -317,7 +320,9 @@
                   def map[A, B](fa: F[A])(f: A => B): F[B]
                 }
 
-                Functor[Future].map(findUser(id))(u => u.copy(age = 0))
+                Functor[Future].map(fetchUsersExcept(user)) {
+                  users => createRecos(user, users)
+                }
             </pre></code>
           </section>
           <section>
