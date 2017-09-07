@@ -12,3 +12,16 @@ and continue by visiting:
  - Functors and Monads.
 
 This journey is meant to be a gateway to become Alice in FP-Wonderland and create a knowledge foundation which can be used to discover more advanced concepts. No prior knowledge of Functional Programming is necessary to follow this talk and I will try my best to provide my fellow travellers with real-world examples which show possible use cases and why using FP in a day-to-day business makes sense.
+
+### Run the Example Code
+If you want to run the test server execute:
+
+```
+sbt "run --filename data/user_db.csv"
+```
+
+A requests looks likes this:
+
+```
+curl -v -X GET "localhost:8080/recommendations/user/0"
+```
