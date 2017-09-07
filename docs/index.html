@@ -76,9 +76,9 @@
                 val newScore = score + 1.0
                 val newUser  = User(user.name, user.age + 1)
 
-                // also represented by the data structures
+                // also reflected by the data structures
                 trait List[A]                      
-                final case class Con[A](a: A, List[A]) extends List[A]
+                final case class Con[A](a: A, tail: List[A]) extends List[A]
                 final case class Nil extends List[Nothing]
             </code></pre>
             <aside class="notes">
@@ -93,7 +93,7 @@
                 def birthday(a: User) = User(user.name, user.age + 1)
 
                 // side effects -> not pure functions
-                def guessAScore = rand.nextInt()
+                def guessAScore = rand.nextDouble()
 
                 def loadUser(userId: Long): Future[User] =
                   rest.get(s"backend.com/user/$userId").map(fromJson(_))
@@ -125,7 +125,7 @@
                 // we want
                 def loadUserAge[F: Functor](userId: UserId)
                                            (implicit l: Loader[F])
-                    : F[Score] =
+                    : F[Int] =
                   l(userId).map(_.age)
             </code></pre>
             <aside class="notes">
@@ -371,11 +371,11 @@
                   def fetchUsersExcept(user: User): F[Seq[User]]
                 }
                 
-                def recosForUser(userId: UserId)
+                def recosForUser[F[_]](userId: UserId)
                     : UserReader[F] => F[Seq[Reco]] =
                   for {
-                  user <- reader => reader.findUser(userId)
-                  ...
+                    user <- reader => reader.findUser(userId)
+                    ...
             </pre></code>
           </section>
           <section>
