@@ -1,8 +1,7 @@
 # With Functions and Monads into the rabbit hole
  - [Follow me](https://pheymann.github.io/meetup-with-functions-and-monads-into-the-rabbit-hole/) to the Slideshow
  - And [here](https://www.meetup.com/de-DE/Scala-Hamburg/events/240727416/?comment_table_id=482166437&comment_table_name=event_comment) you get the meetup description
- - [Here](https://www.youtube.com/watch?v=SDAcT_GAy9g&feature=youtu.be) you will find the video (just slides and my voice).
- 
+  
 ### In Short
 In this talk we will start our journey into the realm of Functional Programming with Scala and Cats beginning with a short introduction into the concept of: 
 
